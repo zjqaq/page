@@ -27,7 +27,7 @@ onMounted(() => {
 })
 
 </script>
- 
+
 <style scoped>
 .msg, .qm{
     color: var(--leleo-vcard-color);
@@ -37,7 +37,7 @@ onMounted(() => {
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
- 
+
 .msg ::v-deep.cursorChar {
     display: inline-block;
     margin-left: 2px;
@@ -49,7 +49,7 @@ onMounted(() => {
 }
 @media (max-width: 960px){
     .leleo-typewriter{
-        min-height: 76px;   
+        min-height: 76px;
     }
     .msg, .qm{
         font-size: 16px;

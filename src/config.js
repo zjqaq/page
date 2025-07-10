@@ -1,14 +1,14 @@
 const config = {
   //网页元数据
   metaData:{
-    title: 'Leleo的个人主页🎉',
-    description: '欢迎来到Leleo的奇妙世界！',
-    keywords: 'Leleo,leleo,个人主页,个人网站',
+    title: '🎉赵嘉的个人主页',
+    description: '欢迎来到赵嘉的奇妙世界！',
+    keywords: '赵嘉,赵嘉,个人主页,个人网站',
     icon: '/favicon.ico'   //网页图标，支持外链
   },
 
   avatar: "/img/avatar.jpg", // 头像
-  welcometitle: "Hi, I'm Leleo", // 标题
+  welcometitle: "Hi, I'm Jia Zhao", // 标题
 
   // 颜色配置
   color: {
@@ -20,16 +20,16 @@ const config = {
   blur: 5, // 毛玻璃模糊效果
 
   // 我的标签
-  tags : ['乐观开朗','温柔体贴','随和亲切','冷静沉着','才思敏捷','风趣幽默','刚正不阿','善解人意'],
+  tags : ['QQ:2317710937','WX:zj2317710937','Phone:15613982332','E-mail:15613982332@163.com'],
 
   // 默认背景壁纸
   background: {
     "pc":{   //pc端
-      "type":"pic",   //"pic":静态壁纸;"video":动态壁纸
+      "type":"video",   //"pic":静态壁纸;"video":动态壁纸
       "datainfo":{
-        "title":"海洋女孩", 
-        "preview":"/img/wallpaper/static/海洋女孩/image-pre.webp",
-        "url":"/img/wallpaper/static/海洋女孩/image.png",     //当然，也可填写网络地址或壁纸api，如随机PC壁纸api："url":"https://t.mwm.moe/pc"
+        "title":"世界很温柔《龙族》上杉绘梨衣",
+        "preview":"https://file.uhsea.com/2503/c048d174eee7df15de79a6cdc5c47697LT.webm",
+        "url":"https://file.uhsea.com/2503/320a926c4a3d6c7e0457823f7fd45e5dUC.webm"    //当然，也可填写网络地址或壁纸api，如随机PC壁纸api："url":"https://t.mwm.moe/pc"
       },
     },
     "mobile":{   //移动端
@@ -45,7 +45,7 @@ const config = {
 
   //极坐标图数据
   polarChart:{
-    skills: ['Vue.js', 'React', 'JavaScript', 'Node', 'Java', 'Python', 'linux', 'Docker', 'MySQL', 'MongoDB', 'AWS'],
+    skills: ['Vue.js', 'Pandas', 'JavaScript', 'Flask', 'C/C++', 'Python', 'Linux', 'Docker', 'MySQL', 'Elasticsearch', 'Anaconda'],
     skillPoints: [85, 78, 88, 90, 80, 78, 85, 65, 82, 78, 70],
   },
 
@@ -59,19 +59,38 @@ const config = {
     {icon:"mdi-facebook",link:"https://www.facebook.com"}
   ],
 
-  //打字机
-  typeWriterStrings: [
-    "如果你看到了这行字，说明我已经成功吸引到了你的注意力。",
-    "顶峰的少年，给了你所有细节，你却说我不是迪迦，给不了你想要的光。",
-    "心简单，世界就简单，幸福才会生长；心自由，生活就自由，到哪都有快乐。",
-    "生命太短，没有时间留给遗憾，若不是终点，请微笑一直向前。"
-  ],
+typeWriterStrings: [
+  "等不到天黑 烟火不会太完美 回忆烧成灰 还是等不到结尾",
+  "我遇见谁 会有怎样的对白 我等的人 她在多远的未来",
+  "那些你很冒险的梦 我陪你去疯 折纸飞机 碰到雨天 终究会坠落",
+  "漫天风雪我陪你颤抖 我们别回头",
+  "别等到一千年以后 所有人都遗忘了我",
+  "那时红色黄昏的沙漠 能有谁解开缠绕千年的寂寞",
+  "问宿命是否 再多久 再持久 再永久",
+  "我怀念的是无话不说 我怀念的是一起作梦 我怀念的是争吵以后 还是想要爱你的冲动",
+  "我听见风来自地铁和人海 我排着队拿着爱的号码牌",
+  "逆光而行的泪光 是我不愿熄灭的倔强 面对希望 逆着光 感觉爱存在的地方",
+  "触电般不可思议像一个奇迹 划过我的生命里 你就是绿光 如此的唯一",
+  "我爱上让我奋不顾身的一个人 我以为这就是我所追求的世界 然而横冲直撞被误解被骗 是否成人的世界背后 总有残缺",
+  "原来人会变得温柔 是透彻的懂了 爱情是流动的 不由人的 何必激动着要理由",
+  "世界有时候孤单的很需要另一个同类 爱收了又给 我们都不太完美",
+  "我不难过 这不算什么 只是为什么眼泪会流 我也不懂",
+  "圈圈圆圆圈圈 天天年年天天的我 深深看你的脸 生气的温柔 埋怨的温柔",
+  "修炼爱情的悲欢 我们这些努力不简单 快乐炼成泪水 是一种勇敢",
+  "小酒窝长睫毛 是你最美的记号 我放慢了步调 感觉像是喝醉了",
+  "如果那天 把该说的话好好说 该体谅的不执著 如果那天我 不受情绪挑拨 你会怎么做",
+  "我为你心跳 我为你祈祷 因为爱让我们能遇到 因为你开始燃烧 痛才慢慢治疗",
+  "编号89757 从这一刻就是你给我的姓名 模仿人类的机器 真实的皮肤有温度 甚至能呼吸",
+  "不潮不用花钱 请你不要到处叩叩 潮流需要抠抠 不小心就没抠抠",
+  "我穿过一片雨林 雨林却离我而去 风裹着回忆 像你温柔的呼吸",
+  "我也很想他 我们都一样 在他的身上曾找到翅膀 只是那时的他 是因为你他开始飞翔"
+],
 
   //音乐播放配置，采用MetingJS Api(https://github.com/metowolf/MetingJS)
   musicPlayer:{
     server: 'netease',  //服务提供商 --网易云音乐
     type: 'playlist',   //歌单类型
-    id: '2028178887'  //歌单id ---> music.163.com/#/playlist?id=2028178887
+    id: '5129637710'  //歌单id ---> music.163.com/#/playlist?id=2028178887
   },
 
   //壁纸数据 -----可以将壁纸文件上传到uhsea.com获取网络直链。若想调用api，请前往脚本自行修改逻辑
@@ -137,18 +156,18 @@ const config = {
   },
 
   //项目卡片 其中 字段"show"控制初始卡片的text是否展开
-  projectcards:[ 
-    {go:"🚀 前往",img:"/img/sunshine.jpg",title:"Project 1",subtitle:"1,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"🗂️ 前往",img:"/img/sunshine.jpg",title:"Project 2",subtitle:"2,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"📝 前往",img:"/img/sunshine.jpg",title:"Project 3",subtitle:"3,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"👍 前往",img:"/img/sunshine.jpg",title:"Project 4",subtitle:"4,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"🗃 前往",img:"/img/sunshine.jpg",title:"Project 5",subtitle:"5,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"🎨 前往",img:"/img/sunshine.jpg",title:"Project 6",subtitle:"6,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"💍 前往",img:"/img/sunshine.jpg",title:"Project 7",subtitle:"7,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
-    {go:"🔍 前往",img:"/img/sunshine.jpg",title:"Project 8",subtitle:"8,000 miles of wonder", text:"If you see this line, I've managed to get your attention.",url:"https://leleo.top",show:false},
+  projectcards:[
+    {go:"🚀 前往",img:"/img/sunshine.jpg",title:"Bilibili",subtitle:"欢迎访问我的B站主页", text:"If you see this line, I've managed to get your attention.",url:"https://space.bilibili.com/518716431?spm_id_from=333.1007.0.0",show:false},
+    {go:"🗂️ 前往",img:"/img/2.jpg",title:"学习通",subtitle:"好好学习，天天向上", text:"If you see this line, I've managed to get your attention.",url:"https://mooc2-ans.chaoxing.com/mooc2-ans/visit/interaction?moocDomain=https://mooc1-1.chaoxing.com/mooc-ans",show:false},
+    {go:"📝 前往",img:"/img/3.jpg",title:"Deepseek",subtitle:"AI", text:"If you see this line, I've managed to get your attention.",url:"https://chat.deepseek.com/",show:false},
+    {go:"👍 前往",img:"/img/4.jpg",title:"小红书",subtitle:"Red Book", text:"If you see this line, I've managed to get your attention.",url:"https://www.xiaohongshu.com/explore?m_source=itab",show:false},
+    {go:"🗃 前往",img:"/img/5.jpg",title:"知乎",subtitle:"知乎", text:"If you see this line, I've managed to get your attention.",url:"https://www.zhihu.com/",show:false},
+    {go:"🎨 前往",img:"/img/6.jpg",title:"微博",subtitle:"微博", text:"If you see this line, I've managed to get your attention.",url:"https://weibo.com/",show:false},
+    {go:"💍 前往",img:"/img/7.jpg",title:"网易云音乐",subtitle:"欢迎访问我的网易云主页", text:"wangyiyun",url:"https://music.163.com/#/user/home?id=3441610956",show:false},
+    {go:"🔍 前往",img:"/img/8.jpg",title:"CSDN",subtitle:"CSDN", text:"If you see this line, I've managed to get your attention.",url:"https://www.csdn.net/",show:false},
   ],
   
-  statement: ["备案号：XXICP备123456789号","Copyright © 2025 Leleo"],
+  statement: ["备案号：XXICP备123456789号","Copyright © 2025 Jia Zhao"],
 }
 
 export default config

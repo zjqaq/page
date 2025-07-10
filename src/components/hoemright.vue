@@ -21,7 +21,7 @@
               </v-card>
             </v-col>
           </v-row>
-          
+
           <v-chip class="mt-3 ml-3" prepend-icon="mdi-webhook"  size="large" style="color: var(--leleo-vcard-color);">
             部署项目
           </v-chip>
@@ -71,10 +71,10 @@
               </v-col>
             </v-row>
           </v-container>
-          
-        </div>       
+
+        </div>
       </div>
-</template> 
+</template>
 
 <script>
 import typewriter from '../components/typewriter.vue';
