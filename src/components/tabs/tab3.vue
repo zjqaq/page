@@ -32,8 +32,8 @@
             
 
             <span 
-            :style="xs?{'font-size':'10px'}:{'font-size':'12px'}" 
-            style="color:var(--leleo-vcard-color);"
+            :style="xs?{'font-size':'10px'}:{'font-size':'12px'}"
+            style="color: white;"
             >{{ formatTime(currentTime) }} / {{ formatTime(duration) }}</span>
             <!-- 控制区 -->
           </div>
@@ -42,18 +42,18 @@
           <div class="lyrics-container ml-1">
               <div class="lyrics"
                   v-if="currentLyric"
-                  :style="xs?{'font-size':'10px'}:{'font-size':'13px'}">{{ currentLyric }}
+                  :style="xs?{'font-size':'10px'}:{'font-size':'13px'}" style="color: white;">{{ currentLyric }}
               </div>
               <div>
-                  <span :style="xs?{'font-size':'10px'}:{'font-size':'14px'}" style="opacity: 0.7;">{{ currentSong.title }}</span>
-                  <span :style="xs?{'font-size':'10px'}:{'font-size':'12px'}" style="opacity: 0.7;"> - - {{ currentSong.author }}</span>
+                  <span :style="xs?{'font-size':'10px'}:{'font-size':'14px'}" style="opacity: 0.7; color: white;">{{ currentSong.title }}</span>
+                  <span :style="xs?{'font-size':'10px'}:{'font-size':'12px'}" style="opacity: 0.7; color: white;"> - - {{ currentSong.author }}</span>
               </div>
           </div>
       </div>
       <v-divider :thickness="4"></v-divider>
-  
+
       <!-- 播放列表 -->
-      <v-list style="max-height: 300px;background: transparent; overflow-y: auto;" ref="songList">
+      <v-list style="max-height: 300px;background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); overflow-y: auto;" ref="songList">
         <v-list-item style="position: relative;"
           v-for="(song, index) in musicinfo"
           :key="index"
@@ -62,17 +62,17 @@
           ref="songItems"
         >
           <v-list-item-content class="d-flex justify-space-between">
-            <v-list-item-title style="color: var(--leleo-vcard-color);">
+            <v-list-item-title style="color: white;">
               <span style="margin-right: 12px;">{{ index+1 }}</span>
               <span>{{ song.title }}</span>
             </v-list-item-title>
-            <span style="font-size: 12px; color: var(--leleo-vcard-color);">{{ song.author }}</span>
+            <span style="font-size: 12px; color: white;">{{ song.author }}</span>
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-container>
   </template>
-  
+
 <script>
 import { useDisplay } from 'vuetify';
 export default {
@@ -250,7 +250,7 @@ export default {
       return `${minutes}:${seconds.toString().padStart(2, '0')}`;
     },
   },
-  
+
   mounted() {
     if(this.fromLyrics.index>=0 && this.currentIndex == this.fromLyrics.index){
         this.lyrics = this.fromLyrics.lyrics;
@@ -274,14 +274,14 @@ export default {
   }
 };
 </script>
-  
+
 <style scoped>
 .loading-spinner {
     position: absolute;
      top: 50%;
     left: 50%;
-     transform: translate(-50%, -50%); 
-    z-index: 1; 
+     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 /* 歌词显示区域 */
@@ -292,7 +292,7 @@ export default {
 
 .lyrics {
   width: 100%;
-  color: var(--leleo-vcard-color);
+  color: white;
 }
 
 /* 列表样式 */
@@ -302,7 +302,7 @@ export default {
 
 /* 列表项样式 */
 .v-list-item {
-  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
   min-height: 40px !important; /* 减小列表项高度 */
   padding-top: 8px !important;
   padding-bottom: 8px !important;
@@ -314,7 +314,7 @@ export default {
 
 /* 当前播放的歌曲高亮 */
 .active-song {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 4px; /* 轻微圆角 */
 }
 

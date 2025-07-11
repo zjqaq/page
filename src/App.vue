@@ -32,27 +32,27 @@
                   ></v-img>
                   <!-- 由于当ismusicplayer显示后，fadein无效果，所以需要设置一个过渡动画 -->
                   <transition name="fade">
-                  <v-card v-show="ismusicplayer" class="musicplayer" :class="{'fade-in':ismusicplayer}" variant="tonal">
+                  <v-card v-show="ismusicplayer" class="musicplayer" :class="{'fade-in':ismusicplayer}" variant="tonal" style="background-color: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); color: white;">
                       <div v-if="audioLoading" class="loading-spinner">
                           <v-progress-circular indeterminate></v-progress-circular>
                       </div>
                       <span ref="audiotitle" class="musicplayer-text"
-                        style="top: 1.6rem;font-weight: bolder;"
+                        style="top: 1.6rem;font-weight: bolder; color: white;"
                       >{{ musicinfo?.[0]?.title }}</span>
                       <span ref="audioauthor" class="musicplayer-text"
-                        style="bottom: 1.4rem;"
+                        style="bottom: 1.4rem; color: white;"
                       >{{ musicinfo?.[0]?.author }}</span>
                       <audio v-show="false" ref="audioPlayer" :src="musicinfo?.[0]?.url"
                       @waiting="onWaiting"
                       @canplay="onCanPlay">
                       </audio>
-                      <v-btn :size="xs||sm?22:30" color="#999999" icon @click="previousTrack()">
+                      <v-btn :size="xs||sm?22:30" color="white" icon @click="previousTrack()">
                       <v-icon>mdi-skip-previous</v-icon>
                       </v-btn>
-                      <v-btn :size="xs||sm?35:48" color="#999999" icon @click="togglePlay()">
+                      <v-btn :size="xs||sm?35:48" color="white" icon @click="togglePlay()">
                       <v-icon>{{ isPlaying? 'mdi-pause' : 'mdi-play' }}</v-icon>
                       </v-btn>
-                      <v-btn :size="xs||sm?22:30" color="#999999" icon @click="nextTrack()">
+                      <v-btn :size="xs||sm?22:30" color="white" icon @click="nextTrack()">
                       <v-icon>mdi-skip-next</v-icon>
                       </v-btn>
                   </v-card>
@@ -107,7 +107,7 @@
             </v-col>
 
             <v-col cols="12" md="8" lg="9" style="height: 100vh;" :style="xs||sm ?{}:{'overflow': 'auto'}">
-                <homeright :configdata=configdata :formattedTime=formattedTime 
+                <homeright :configdata=configdata :formattedTime=formattedTime
                 :formattedDate=formattedDate :projectcards=projectcards></homeright>
             </v-col>
         </v-row>
@@ -134,14 +134,14 @@
               class="text-none"
             ></v-tab>
           </template>
-          
+
           <template v-slot:item="{ item }">
             <v-tabs-window-item :value="item.value" class="pa-4">
               <div v-if="item.value=='tab-3' && musicinfoLoading" class="loading-spinner" align="center">
                   <v-progress-circular indeterminate></v-progress-circular>
               </div>
               <!-- 通过组件绑定不同tab项的组件 -->
-              <component v-if="item.value!='tab-3' || (item.value=='tab-3' && !musicinfoLoading)" :is=item.component @cancel="handleCancel" 
+              <component v-if="item.value!='tab-3' || (item.value=='tab-3' && !musicinfoLoading)" :is=item.component @cancel="handleCancel"
               :musicinfo="item.value=='tab-3'?musicinfo:[]"
               :currentIndex="item.value=='tab-3'?playlistIndex:null"
               :isPlaying="item.value=='tab-3'?isPlaying:null"
