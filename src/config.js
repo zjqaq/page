@@ -50,14 +50,21 @@ const config = {
   },
 
   //社交按钮
-  socialPlatformIcons: [
-    {icon:"mdi-github",link:"https://www.github.com/leleo886"},
-    {icon:"mdi-email",link:"mailto:leleo886@foxmail.com"},
-    {icon:"mdi-qqchat",link:"https://im.qq.com/"},
-    {icon:"mdi-wechat",link:"https://wx.qq.com/"},
-    {icon:"mdi-youtube",link:"https://www.youtube.com"},
-    {icon:"mdi-facebook",link:"https://www.facebook.com"}
-  ],
+socialPlatformIcons: [
+  {icon:"mdi-github",link:"https://www.github.com/leleo886"},
+  {icon:"mdi-email",link:"mailto:15613982332@163.com"},
+  {icon:"mdi-qqchat",link:"https://im.qq.com/"},
+  {icon:"mdi-wechat",link:"https://wx.qq.com/"},
+  {icon:"mdi-youtube",link:"https://www.youtube.com"},
+  {icon:"mdi-facebook",link:"https://www.facebook.com"},
+  {icon:"mdi-music",link:"https://music.163.com/#/user/home?id=3441610956",color:"#e72d2c",title:"网易云音乐"},
+  {icon:"mdi-sina-weibo",link:"https://weibo.com/",color:"#e6162d",title:"微博"},
+  {icon:"mdi-school",link:"https://mooc2-ans.chaoxing.com/mooc2-ans/visit/interaction?moocDomain=https://mooc1-1.chaoxing.com/mooc-ans",color:"#22c3c9",title:"学习通"},
+  {icon: "mdi-shopping", link: "https://www.xiaohongshu.com", color: "#ff2442", title: "小红书"},
+  {icon: "mdi-language-java", link: "https://www.csdn.net", color: "#d71f1d", title: "CSDN"},
+  {icon: "mdi-music-note",link: "https://www.douyin.com", color: "#000000", title: "抖音"},
+  {icon: "mdi-robot", link: "https://www.deepseek.com", color: "#5e17eb", title: "DeepSeek"}
+],
 
 typeWriterStrings: [
   "等不到天黑 烟火不会太完美 回忆烧成灰 还是等不到结尾",
@@ -70,7 +77,6 @@ typeWriterStrings: [
   "我怀念的是无话不说 我怀念的是一起作梦 我怀念的是争吵以后 还是想要爱你的冲动",
   "我听见风来自地铁和人海 我排着队拿着爱的号码牌",
   "逆光而行的泪光 是我不愿熄灭的倔强 面对希望 逆着光 感觉爱存在的地方",
-  "触电般不可思议像一个奇迹 划过我的生命里 你就是绿光 如此的唯一",
   "我爱上让我奋不顾身的一个人 我以为这就是我所追求的世界 然而横冲直撞被误解被骗 是否成人的世界背后 总有残缺",
   "原来人会变得温柔 是透彻的懂了 爱情是流动的 不由人的 何必激动着要理由",
   "世界有时候孤单的很需要另一个同类 爱收了又给 我们都不太完美",
@@ -80,9 +86,7 @@ typeWriterStrings: [
   "小酒窝长睫毛 是你最美的记号 我放慢了步调 感觉像是喝醉了",
   "如果那天 把该说的话好好说 该体谅的不执著 如果那天我 不受情绪挑拨 你会怎么做",
   "我为你心跳 我为你祈祷 因为爱让我们能遇到 因为你开始燃烧 痛才慢慢治疗",
-  "编号89757 从这一刻就是你给我的姓名 模仿人类的机器 真实的皮肤有温度 甚至能呼吸",
-  "不潮不用花钱 请你不要到处叩叩 潮流需要抠抠 不小心就没抠抠",
-  "我穿过一片雨林 雨林却离我而去 风裹着回忆 像你温柔的呼吸",
+  "我往前飞 飞过一片时间海",
   "我也很想他 我们都一样 在他的身上曾找到翅膀 只是那时的他 是因为你他开始飞翔"
 ],
 

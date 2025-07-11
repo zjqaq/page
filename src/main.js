@@ -13,7 +13,7 @@ const vuetify = createVuetify({
     components,
     directives,
     icons: {
-        defaultSet: 'mdi', // 这已经是默认值-仅用于显示目的 
+        defaultSet: 'mdi', // 这已经是默认值-仅用于显示目的
     },
     defaults: {
         VCard: {
@@ -24,4 +24,3 @@ const vuetify = createVuetify({
 const app = createApp(App);
 app.config.warnHandler = () => {};
 app.use(vuetify).mount('#app')
-
